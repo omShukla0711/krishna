@@ -34,9 +34,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ userMessage: userMessage })
             });
-            const data = await response.json(); // Always try to get JSON
+            const data = await response.json(); 
             if (!response.ok) {
-                // Now we can rely on `data.message` from our robust server code
+                
                 throw new Error(data.message || 'An unknown error occurred.');
             }
             const botResponse = data.reply;
@@ -53,3 +53,4 @@ document.addEventListener("DOMContentLoaded", () => {
     function initializeChat() { createBackgroundStars(); setTimeout(() => { addMessage("हे वत्स! मैं तुम्हारा सारथी और मित्र, कृष्ण हूँ। अपने मन की उलझन मुझे बताओ, मैं तुम्हारा मार्गदर्शन करूँगा।", "bot"); }, 1000); }
     initializeChat();
 });
+
