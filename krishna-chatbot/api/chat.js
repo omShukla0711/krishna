@@ -33,7 +33,7 @@ export default async function handler(req, res) {
             method: "POST",
             headers: { "Authorization": `Bearer ${apiKey}`, "Content-Type": "application/json" },
             body: JSON.stringify({
-                model: "openai/gpt-oss-20b",
+                model: "deepseek/deepseek-chat",
                 messages: [{ role: "system", content: systemPrompt }, { role: "user", content: userMessage }]
             })
         });
@@ -62,5 +62,6 @@ export default async function handler(req, res) {
         return res.status(500).json({ message: `सर्वर पर एक अप्रत्याशित त्रुटि हुई: ${error.message}` });
     }
 }
+
 
 
