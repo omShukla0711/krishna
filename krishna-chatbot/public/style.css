@@ -19,7 +19,7 @@ body {
     height: 100vh;
     margin: 0;
     transition: background-color 0.3s, color 0.3s;
-    background-color: var(--bg-light);
+    background-color: black;
     color: var(--text-light);
     cursor: none;
     overflow: hidden;
@@ -83,9 +83,9 @@ body.dark-mode .cursor-glow {
 }
 
 .chat-container {
-    width: 400px;
-    height: 600px;
-    background-color: var(--container-light);
+    width: 500px;
+    height: 100%;
+    background-color: #a4f7a3;;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -110,6 +110,7 @@ body.dark-mode .chat-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 2px solid black;
 }
 
 body.dark-mode .chat-header {
@@ -215,8 +216,9 @@ body.dark-mode .user-message {
 .bot-message {
     align-self: flex-start;
     background-color: #f1f1f1;
-    color: var(--text-light);
+    color: black;
     border-bottom-left-radius: 4px;
+    border:2px solid black;
 }
 
 body.dark-mode .bot-message {
@@ -227,7 +229,7 @@ body.dark-mode .bot-message {
 .chat-input {
     display: flex;
     padding: 10px;
-    border-top: 1px solid var(--input-border-light);
+    border-top: 3px solid black;
 }
 
 body.dark-mode .chat-input {
@@ -236,12 +238,12 @@ body.dark-mode .chat-input {
 
 #user-input {
     flex-grow: 1;
-    border: 1px solid var(--input-border-light);
+    border: 1px solid black;
     border-radius: 20px;
     padding: 10px 15px;
     font-size: 16px;
     background-color: transparent;
-    color: var(--text-light);
+    color: black;
 }
 
 body.dark-mode #user-input {
