@@ -230,6 +230,7 @@ body.dark-mode .bot-message {
     display: flex;
     padding: 10px;
     border-top: 3px solid black;
+    margin-bottom:100px;
 }
 
 body.dark-mode .chat-input {
@@ -309,6 +310,7 @@ body.dark-mode .typing-indicator {
         transform: scale(1.0);
     }
 }
+
 
 
 
