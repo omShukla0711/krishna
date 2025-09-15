@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://krishnaji-by-om-shukla.vercel.app/sitemap.xml
+
