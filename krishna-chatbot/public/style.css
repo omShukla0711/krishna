@@ -92,6 +92,7 @@ body.dark-mode .cursor-glow {
     flex-direction: column;
     transition: background-color 0.3s;
     z-index: 10;
+    margin-bottom:150px;
 
 }
 
@@ -310,5 +311,6 @@ body.dark-mode .typing-indicator {
         transform: scale(1.0);
     }
 }
+
 
 
